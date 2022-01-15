@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Cadastros-react/static/css/main.05d34200.css",
+    "main.js": "/Cadastros-react/static/js/main.68e40f9e.js",
+    "index.html": "/Cadastros-react/index.html",
+    "main.05d34200.css.map": "/Cadastros-react/static/css/main.05d34200.css.map",
+    "main.68e40f9e.js.map": "/Cadastros-react/static/js/main.68e40f9e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.05d34200.css",
+    "static/js/main.68e40f9e.js"
+  ]
+}

@@ -1,0 +1,12 @@
+.pagination {
+    display: inline-block;
+    list-style: none;
+  }
+  
+  .pagination a {
+    color: rgb(0, 0, 0);
+    float: left;
+    padding: 3px 3px;
+    text-decoration: none;
+    margin: 0 4px
+  }

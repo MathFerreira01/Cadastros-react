@@ -1,0 +1,39 @@
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input--name { 
+    margin: 5px;
+    height: 23px;
+    width: 225px;
+    border-color: black;
+}
+
+table, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho--name {
+    background-color: #868383;
+}
+
+.cabecalho--age {
+    background-color: #868383
+}
+
+.name {
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 30%; 
+}
+
+.age {
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 20%;
+}

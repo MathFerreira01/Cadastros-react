@@ -1,25 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import Posts from './components/Posts';
 import Pagination from './components/Pagination';
-import axios from 'axios';
 import './App.css';
+import { getAllUsers } from './service/user.services';
 
 const App = () => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState([])
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(500);
 
-  useEffect(() => {
-    const fetchPosts = async () => {
-      setLoading(true);
-      const res = await axios.get('https://random-persons.herokuapp.com/users');
-      setData(res.data.data);
-      setLoading(false);
-    };
+  async function getUser() {
+    setLoading(true)
+    const apiResponse = await getAllUsers();
+    setData(apiResponse)
+    setLoading(false)
+    }
 
-    fetchPosts();
-  }, []);
+    useEffect(() => {
+      getUser();
+    }, []);
 
   // Get current posts
   const indexOfLastPost = currentPage * postsPerPage;

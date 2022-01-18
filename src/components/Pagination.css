@@ -6,7 +6,6 @@
   .pagination a {
     color: rgb(0, 0, 0);
     float: left;
-    padding: 3px 3px;
+    padding: 3px;
     text-decoration: none;
-    margin: 0 4px
   }

@@ -14,21 +14,21 @@ const Posts = ({ data, loading }) => {
   }
 
   return (
-    <div alig>
+    <div>
       {console.log(data)}
       <div>
         <input
           className="input--name"
-          placeholder="Pesquisar"
+          placeholder=" Pesquisar"
           type="text"
           value={busca}
           onChange={(ev) => setBusca(ev.target.value)}
         ></input>
       </div>
-      <table>
+      <table className="tabela">
         <tr>
-          <th className="cabecalho--name">Name</th>
-          <th className="cabecalho--age">Age</th>
+          <th className="cabecalho--name">Nome</th>
+          <th className="cabecalho--age">Idade</th>
         </tr>
         {nomesFiltradas.map((data, index) => (
           <tr key={index}>
@@ -42,3 +42,4 @@ const Posts = ({ data, loading }) => {
 };
 
 export default Posts;
+
